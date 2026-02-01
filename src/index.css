@@ -190,14 +190,18 @@ body {
         @apply min-h-screen py-28 2xl:px-0 px-5 container mx-auto;
 
         .content {
-            @apply grid grid-cols-1 lg:grid-cols-12 gap-5;
+            @apply flex justify-between;
 
             h2 {
                 @apply text-5xl md:text-6xl font-modern-negra max-w-lg;
             }
 
+            /* .left{
+                @apply w-[30vw]
+            } */
+
             .sub-content {
-                @apply md:col-span-4 space-y-5 flex flex-col justify-between;
+                @apply md:col-span-4 space-y-5 flex flex-col justify-between w-[32vw];
 
                 p {
                     @apply text-lg;
@@ -218,7 +222,7 @@ body {
         }
 
         .top-grid {
-            @apply grid grid-cols-1 xl:grid-cols-12 gap-5 mb-5 md:px-0 px-5;
+            @apply grid grid-cols-1 xl:grid-cols-12 gap-5 mb-5 md:px-0 px-5 pt-20;
 
             > div {
                 @apply rounded-3xl overflow-hidden h-72 relative;

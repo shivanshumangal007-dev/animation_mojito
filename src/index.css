@@ -168,7 +168,7 @@ body {
                 @apply space-y-8;
 
                 li {
-                    @apply flex justify-between items-start;
+                    @apply flex md:w-[30vw]  lg:w-[23vw] justify-between items-start;
 
                     h3 {
                         @apply font-modern-negra 2xl:text-3xl text-xl text-yellow;

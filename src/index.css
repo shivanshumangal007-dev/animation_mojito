@@ -247,14 +247,24 @@ body {
     }
 
     #art {
-        @apply flex-center flex-col min-h-dvh p-5 mt-20 relative radial-gradient;
+        @apply flex-center flex-col min-h-dvh p-5 mt-20 relative radial-gradient scroll-bar;
 
         h2 {
             @apply relative md:text-[20vw] text-8xl text-nowrap leading-none font-modern-negra text-center text-[#505050] mb-8;
         }
 
         .content {
-            @apply flex md:flex-row flex-col justify-between md:mb-16 md:mt-0 mt-40 gap-10;
+            @apply w-full flex md:flex-row flex-col justify-between md:mb-16 md:mt-0 mt-40 gap-10;
+
+            ul{
+                @apply flex flex-col gap-4 text-gray-400;
+            }
+            ul li span{
+                @apply ml-1.5
+            }
+            ul img{
+                @apply inline-block
+            }
         }
 
         .cocktail-img {
@@ -267,7 +277,7 @@ body {
             }
 
             div {
-                @apply opacity-0 md:px-0 px-5 space-y-5 absolute md:bottom-5 bottom-52 left-1/2 -translate-x-1/2;
+                @apply opacity-0 mt-20 md:px-0 px-5 space-y-5 absolute md:bottom-5 bottom-52 left-1/2 -translate-x-1/2;
 
                 h3 {
                     @apply md:text-5xl text-2xl text-center font-serif md:w-full w-80 text-white;

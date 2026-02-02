@@ -10,7 +10,6 @@ const Contact = () => {
           scrollTrigger: {
             trigger: "#contact",
             start: "top 50%",
-            markers: true,
           },
         });
         

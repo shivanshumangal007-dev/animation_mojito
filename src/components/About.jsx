@@ -1,6 +1,44 @@
-import React from 'react'
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import React from "react";
 
 const About = () => {
+  useGSAP(() => {
+    gsap.from(".content .left", {
+      opacity: 0,
+      yPercent: 10,
+      ease: "expo.inOut",
+      scrollTrigger: {
+        trigger: "#about",
+        start: "top 50%",
+      },
+    });
+    gsap.from(".content .right", {
+      opacity: 0,
+      yPercent: 10,
+      ease: "expo.inOut",
+      scrollTrigger: {
+        trigger: "#about",
+        start: "top 50%",
+      },
+    });
+    gsap.from(".top-grid", {
+      opacity: 0,
+      yPercent: 10,
+      scrollTrigger: {
+        trigger: "#about",
+        start: "top 20%",
+      },
+    });
+    gsap.from(".bottom-grid", {
+      opacity: 0,
+      yPercent: 10,
+      scrollTrigger: {
+        trigger: "#about",
+        start: "top 20%",
+      },
+    });
+  }, []);
   return (
     <div id="about">
       <div className="content">
@@ -43,6 +81,6 @@ const About = () => {
       </div>
     </div>
   );
-}
+};
 
-export default About
+export default About;

@@ -49,7 +49,7 @@ const Hero = () => {
       [],
     );
     const startValue = isMobile ? "top 40%" : "top 20%";
-    const endValue = isMobile ? "150% top" : "bottom top";
+    const endValue = isMobile ? "120% top" : "bottom 11%";
     const video = videoRef.current;
     const videoTl = gsap.timeline({
       scrollTrigger: {
@@ -100,7 +100,7 @@ const Hero = () => {
           </div>
         </div>
       </section>
-      <div className="video absolute inset-0">
+      <div className="video absolute inset-0 no-scroll">
         <video
           ref={videoRef}
           src="/videos/output.mp4"

@@ -89,7 +89,7 @@ body {
     }
 
     #hero {
-        @apply relative z-10 min-h-dvh w-full border border-transparent;
+        @apply relative z-10 min-h-screen w-full border border-transparent;
 
         h1 {
             @apply uppercase md:mt-32 mt-40 text-8xl md:text-[20vw] leading-none text-center font-modern-negra;
@@ -247,7 +247,7 @@ body {
     }
 
     #art {
-        @apply flex-center flex-col min-h-dvh p-5 mt-20 relative radial-gradient scroll-bar;
+        @apply flex-center flex-col min-h-dvh p-5 mt-20 relative radial-gradient;
 
         h2 {
             @apply relative md:text-[20vw] text-8xl text-nowrap leading-none font-modern-negra text-center text-[#505050] mb-8;
@@ -291,14 +291,14 @@ body {
     }
 
     #menu {
-        @apply relative w-full md:mt-40 mt-0 2xl:px-0 px-5 py-20 radial-gradient;
+        @apply relative min-h-screen w-full md:mt-40 mt-0 2xl:px-0 px-5 py-20 radial-gradient ;
 
         #m-left-leaf {
-            @apply object-contain absolute -bottom-20 left-0 md:w-fit w-1/3;
+            @apply object-contain absolute bottom-0 left-0 md:w-fit w-1/3;
         }
 
         #m-right-leaf {
-            @apply object-contain absolute -top-40 right-0 md:w-fit w-1/4;
+            @apply object-contain absolute top-0 right-0 md:w-fit w-1/4;
         }
 
         .cocktail-tabs {
@@ -316,7 +316,7 @@ body {
                 @apply flex items-center justify-between w-full absolute;
 
                 button {
-                    @apply text-white hover:text-yellow cursor-pointer transition-colors max-w-36;
+                    @apply text-white flex-center flex-col  hover:text-yellow cursor-pointer transition-colors max-w-36;
 
                     span {
                         @apply text-3xl font-modern-negra leading-none hidden md:block;
@@ -337,7 +337,7 @@ body {
             @apply flex max-md:flex-col gap-10 md:items-center justify-between w-full lg:absolute bottom-0;
 
             .info {
-                @apply space-y-4 lg:translate-y-20;
+                @apply pl-3 space-y-4 lg:translate-y-20;
 
                 #title {
                     @apply font-modern-negra md:text-6xl text-3xl text-yellow max-w-40;
@@ -389,4 +389,8 @@ body {
             @apply absolute bottom-0 right-0 lg:w-96 w-1/3 pointer-events-none;
         }
     }
+}
+
+.no-scroll::-webkit-scrollbar{
+    display: none;
 }

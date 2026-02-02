@@ -13,7 +13,6 @@ const Art = () => {
         trigger: "#art",
         start: "top 0%",
         end: "bottom 0%",
-        markers: true,
         pin: true,
         scrub: 1.5,
       },
@@ -25,8 +24,6 @@ const Art = () => {
     })
       .to(".masked-img", {
         scale: 1.1,
-
-        maskPosition: "center",
         maskSize: "300%",
         duration: 1,
         ease: "power1.inOut",

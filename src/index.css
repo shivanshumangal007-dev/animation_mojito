@@ -377,11 +377,14 @@ body {
             }
 
             h3 {
-                @apply uppercase xl:text-base 2xl:text-lg text-base mb-2;
+                @apply xl:text-base 2xl:text-lg text-base mb-2;
             }
 
             p {
                 @apply lg:text-2xl 2xl:text-3xl text-sm;
+            }
+            h3.socials{
+                @applyw-[20vw] self-center
             }
         }
 
@@ -389,8 +392,4 @@ body {
             @apply absolute bottom-0 right-0 lg:w-96 w-1/3 pointer-events-none;
         }
     }
-}
-
-.no-scroll::-webkit-scrollbar{
-    display: none;
 }

@@ -1,6 +1,5 @@
 import React, { captureOwnerStack, useEffect, useState } from "react";
 import { sliderLists } from "../../constants";
-import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
 const Menu = () => {

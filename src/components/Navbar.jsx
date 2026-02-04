@@ -27,7 +27,7 @@ const Navbar = () => {
     <nav className='navbar-class'>
       <div>
         <a href="#home">
-            <p className='capitalize align-middle flex-center gap-3'><img src="/images/logo.png" className='inline-block' alt="logo" />velvet pour</p>
+            <p className='capitalize align-middle flex-center gap-3'><img src="images/logo.png" className='inline-block' alt="logo" />velvet pour</p>
         </a>
         <ul>
             {

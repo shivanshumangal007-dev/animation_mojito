@@ -40,7 +40,7 @@ const Art = () => {
         <ul className="will-fade">
           {goodLists.map((feature) => (
             <li>
-              <img src="/images/check.png" alt="check" />
+              <img src="images/check.png" alt="check" />
               <span>{feature}</span>
             </li>
           ))}
@@ -48,7 +48,7 @@ const Art = () => {
         <ul className="will-fade">
           {featureLists.map((feature) => (
             <li>
-              <img src="/images/check.png" alt="check" />
+              <img src="images/check.png" alt="check" />
               <span>{feature}</span>
             </li>
           ))}
@@ -56,7 +56,7 @@ const Art = () => {
       </div>
       <div className="cocktail-img">
         <img
-          src="/images/under-img.jpg"
+          src="images/under-img.jpg"
           className="masked-img abs-center"
           alt=""
         />

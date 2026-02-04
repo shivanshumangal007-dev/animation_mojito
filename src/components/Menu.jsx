@@ -32,8 +32,8 @@ const Menu = () => {
       id="menu"
       //   className="[&::-webkit-scrollbar]:hidden"
     >
-      <img src="/images/slider-left-leaf.png" alt="" id="m-left-leaf" />
-      <img src="/images/slider-right-leaf.png" alt="" id="m-right-leaf" />
+      <img src="images/slider-left-leaf.png" alt="" id="m-left-leaf" />
+      <img src="images/slider-right-leaf.png" alt="" id="m-right-leaf" />
 
       <div className="cocktail-tabs">
         {sliderLists.map((cocktail) => {
@@ -63,7 +63,7 @@ const Menu = () => {
             }
           >
             <span>{prevcocktailname}</span>
-            <img src="/images/right-arrow.png" alt="" />
+            <img src="images/right-arrow.png" alt="" />
           </button>
           <button
             onClick={() =>
@@ -71,7 +71,7 @@ const Menu = () => {
             }
           >
             <span>{nextcocktailname}</span>
-            <img src="/images/left-arrow.png" alt="" />
+            <img src="images/left-arrow.png" alt="" />
           </button>
         </div>
       </div>

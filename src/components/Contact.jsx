@@ -29,12 +29,12 @@ const Contact = () => {
   return (
     <div id="contact">
       <img
-        src="/images/footer-left-leaf.png"
+        src="images/footer-left-leaf.png"
         alt="left-leaf"
         id="f-left-leaf"
       />
       <img
-        src="/images/footer-right-leaf.png"
+        src="images/footer-right-leaf.png"
         alt="left-leaf"
         id="f-right-leaf"
       />

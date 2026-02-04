@@ -74,12 +74,12 @@ const Hero = () => {
       <section id="hero" className="noisy">
         <h1>mojito</h1>
         <img
-          src="/images/hero-left-leaf.png"
+          src="images/hero-left-leaf.png"
           alt="left-leaf"
           className="left-leaf"
         />
         <img
-          src="/images/hero-right-leaf.png"
+          src="images/hero-right-leaf.png"
           alt="right-leaf"
           className="right-leaf"
         />
@@ -103,7 +103,7 @@ const Hero = () => {
       <div className="video absolute inset-0 no-scroll">
         <video
           ref={videoRef}
-          src="/videos/output.mp4"
+          src="videos/output.mp4"
           muted
           playsInline
           preload="auto"
